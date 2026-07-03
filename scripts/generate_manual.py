@@ -17,6 +17,31 @@ from fpdf import FPDF
 
 sys.path.insert(0, os.path.dirname(__file__))
 from manual_content import MANUAL_META, INDEX, CHAPTERS
+from manual_content_extended import (
+    EXTENDED_INDEX,
+    EXTENDED_CHAPTERS,
+    SECTION_ADDITIONS,
+)
+
+
+def build_manual_data():
+    """Mescla conteúdo base com extensões e adições por seção."""
+    import copy
+
+    chapters = copy.deepcopy(CHAPTERS)
+
+    for chapter in chapters:
+        for section in chapter["sections"]:
+            title = section["title"]
+            if title in SECTION_ADDITIONS:
+                section["instructions"].extend(SECTION_ADDITIONS[title])
+
+    chapters.extend(EXTENDED_CHAPTERS)
+    index = list(INDEX) + list(EXTENDED_INDEX)
+    return index, chapters
+
+
+INDEX_FULL, CHAPTERS_FULL = build_manual_data()
 
 # BLBW Corporate Colors
 BLBW_PRIMARY = RGBColor(0x00, 0x66, 0xB3)      # #0066B3
@@ -163,7 +188,7 @@ def add_cover_page(doc):
 
 def add_index(doc):
     doc.add_heading("ÍNDICE GERAL", level=1)
-    for chapter, sections in INDEX:
+    for chapter, sections in INDEX_FULL:
         p = doc.add_paragraph()
         run = p.add_run(chapter)
         run.bold = True
@@ -219,7 +244,7 @@ def generate_docx(output_path):
     add_cover_page(doc)
     add_index(doc)
 
-    for chapter in CHAPTERS:
+    for chapter in CHAPTERS_FULL:
         doc.add_heading(chapter["title"], level=1)
         for section in chapter["sections"]:
             doc.add_heading(section["title"], level=2)
@@ -330,7 +355,7 @@ def generate_pdf(output_path):
     # Index
     pdf.add_page()
     pdf.chapter_title("ÍNDICE GERAL")
-    for chapter, sections in INDEX:
+    for chapter, sections in INDEX_FULL:
         pdf.set_font("DejaVu", "B", 11)
         pdf.set_text_color(*PDF_PRIMARY)
         pdf.cell(0, 7, chapter, new_x="LMARGIN", new_y="NEXT")
@@ -341,7 +366,7 @@ def generate_pdf(output_path):
         pdf.ln(2)
 
     # Chapters
-    for chapter in CHAPTERS:
+    for chapter in CHAPTERS_FULL:
         pdf.add_page()
         pdf.chapter_title(chapter["title"])
         for section in chapter["sections"]:

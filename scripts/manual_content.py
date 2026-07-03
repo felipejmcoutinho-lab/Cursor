@@ -4,7 +4,7 @@
 MANUAL_META = {
     "title": "MANUAL TÉCNICO AVANÇADO DE INSTRUÇÕES E LÓGICA DE CONTROLE",
     "subtitle": "Referência Rápida e Aplicações Práticas - Siemens TIA Portal / Step 7 (LAD/STL)",
-    "version": "Corporativa 1.0",
+    "version": "Corporativa 1.1",
     "audience": "Engenharia de Automação e Manutenção Industrial (Nível Especialista)",
     "platform": "CLP Siemens (S7-1200, S7-1500, S7-300/400)",
     "company": "BLBW - Be Life, Be Water",

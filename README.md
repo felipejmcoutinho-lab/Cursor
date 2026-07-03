@@ -18,8 +18,11 @@ python3 scripts/generate_manual.py
 
 ## Estrutura
 
-- `scripts/manual_content.py` — Conteúdo técnico dos 10 capítulos
+- `scripts/manual_content.py` — Conteúdo técnico dos 10 capítulos base
+- `scripts/manual_content_extended.py` — Extensões, apêndices e instruções adicionais
 - `scripts/generate_manual.py` — Gerador DOCX/PDF com padrão corporativo BLBW
+
+**Versão atual:** Corporativa 1.1 (inclui apêndices A/B e capítulos de continuação)
 
 ## Padrão BLBW
 
