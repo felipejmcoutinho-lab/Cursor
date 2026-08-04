@@ -1,0 +1,23 @@
+name: Validate Cloud Config
+
+on:
+  pull_request:
+    paths:
+      - '.cursor/environment.json'
+      - 'AGENTS.md'
+      - 'scripts/validate-cloud-config.sh'
+  push:
+    branches: [main]
+    paths:
+      - '.cursor/environment.json'
+      - 'AGENTS.md'
+      - 'scripts/validate-cloud-config.sh'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate environment.json and docs
+        run: ./scripts/validate-cloud-config.sh
