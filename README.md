@@ -33,6 +33,17 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
 
+### Status da integração
+
+| Item | Status |
+|------|--------|
+| `.cursor/environment.json` na `main` | ✅ |
+| Build cloud (`main`) | ✅ `bld-20260804-dd809f32-8044-41b0-b37b-0c0ac870fa19` |
+| Ambiente | [Dashboard](https://cursor.com/dashboard/cloud-agents/environments/e/c81a84db-761f-11f1-a7d1-d6b4613131ce) |
+| CI de validação | GitHub Actions (`validate-cloud-config.yml`) |
+
+**Promover build ativo:** no dashboard do ambiente, abra a aba **Builds** e promova o build da `main` se ainda não estiver ativo (builds draft via API não se tornam ativos automaticamente).
+
 ### Documentação oficial
 
 - [Cloud Agents](https://cursor.com/docs/cloud-agent.md)
