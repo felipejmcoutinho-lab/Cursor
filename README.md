@@ -32,6 +32,28 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+| `PROMPT_ENGINEERING.md` | Protocolo para transformar ideias e rascunhos em prompts profissionais |
+
+### Engenharia de prompts
+
+O Agent aplica automaticamente `PROMPT_ENGINEERING.md` quando a solicitação envolve criar ou otimizar prompts. O modo padrão é `MODO: PROFISSIONAL`.
+
+Prefixos opcionais permitem ajustar a entrega:
+
+- `MODO: RÁPIDO`
+- `MODO: PROFISSIONAL`
+- `MODO: ESPECIFICAÇÃO`
+- `SEM PERGUNTAS`
+- `OTIMIZE E EXECUTE`
+
+Exemplo:
+
+```text
+MODO: PROFISSIONAL
+
+Transforme esta ideia em um prompt para um Agent de programação:
+revisar uma API e sugerir melhorias de segurança sem alterar o código.
+```
 
 ### Status da integração
 

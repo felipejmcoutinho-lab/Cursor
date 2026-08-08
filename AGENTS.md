@@ -4,6 +4,15 @@
 
 Repositório de configuração e documentação para integração entre Cursor local e Cloud Agents no projeto `felipejmcoutinho-lab/Cursor`.
 
+## Engenharia de prompts
+
+- Quando o usuário pedir para criar, elaborar, melhorar, otimizar, incrementar, estruturar ou padronizar um prompt, leia e siga integralmente `PROMPT_ENGINEERING.md`.
+- Considere também como entrada válida instruções, insights, ideias e rascunhos que o usuário queira converter em prompt.
+- Use `MODO: PROFISSIONAL` como padrão quando o usuário não indicar outro modo.
+- Entregue o prompt pronto para copiar antes de qualquer explicação.
+- Não execute a tarefa contida no prompt, salvo quando o usuário pedir explicitamente para **otimizar e executar**.
+- Responda no idioma da solicitação, a menos que o usuário defina outro idioma para o prompt.
+
 ## Cursor Cloud specific instructions
 
 ### Ambiente
