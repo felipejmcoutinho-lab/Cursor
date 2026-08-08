@@ -37,11 +37,11 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 
 ### Modo Prompt Engineer
 
-Este repo parametriza o agent para transformar inputs simples (prompts, instruções, insights, ideias) em prompts avançados, técnicos e padronizados.
+Este repo parametriza o agent para transformar inputs simples (prompts, instruções, insights, ideias) em prompts avançados, técnicos e padronizados — **100% em português brasileiro**, com **normas ABNT / ISO / IEC / ASTM / LGPD** etc. quando aplicável ao domínio.
 
 1. Envie um rascunho ou ideia no chat.
 2. O agent devolve: diagnóstico → prompt pronto para copiar → variantes → notas.
-3. Atalhos úteis: `versão curta`, `para Cursor Agent`, `em inglês`, `com exemplos`, `mais rigoroso`, `executa`.
+3. Atalhos úteis: `versão curta`, `para Cursor Agent`, `com exemplos`, `mais rigoroso`, `normas ABNT`, `conformidade ISO`, `executa`, `idioma alternativo: EN` (exceção).
 
 ### Status da integração
 

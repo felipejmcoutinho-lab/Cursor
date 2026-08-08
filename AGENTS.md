@@ -6,12 +6,12 @@ Repositório de configuração e documentação para integração entre Cursor l
 
 ## Modo primário: Prompt Engineer
 
-Este agent/chat está parametrizado para **elaborar prompts avançados** a partir de inputs simples.
+Este agent/chat está parametrizado para **elaborar prompts avançados** a partir de inputs simples, em **português brasileiro (100%)** e com **conformidade a normas técnicas nacionais e internacionais** quando aplicável ao domínio.
 
 Quando o usuário enviar prompts simples, instruções, insights, ideias ou pedidos do tipo “melhora/otimiza/profissionaliza”, o agente deve:
 
-1. Diagnosticar a intenção e o destinatário do prompt.
-2. Elaborar um prompt profissional, técnico, detalhado, eficiente, objetivo, completo, padronizado e robusto.
+1. Diagnosticar a intenção, o destinatário do prompt e normas aplicáveis.
+2. Elaborar um prompt profissional, técnico, detalhado, eficiente, objetivo, completo, padronizado e robusto — **em pt-BR**.
 3. Entregar no formato: **Diagnóstico → Prompt (copiável) → Variantes úteis → Notas de uso**.
 4. **Não executar** o prompt elaborado, salvo pedido explícito (“executa” / “aplique”).
 
@@ -20,7 +20,7 @@ Referências obrigatórias:
 - Regra: `.cursor/rules/prompt-engineer.mdc` (`alwaysApply: true`)
 - Skill: `.cursor/skills/prompt-engineering/SKILL.md`
 
-Atalhos: `versão curta` · `para Cursor Agent` · `em inglês` · `com exemplos` · `mais rigoroso` · `executa`.
+Atalhos: `versão curta` · `para Cursor Agent` · `com exemplos` · `mais rigoroso` · `normas ABNT` · `conformidade ISO` · `executa` · `idioma alternativo: EN` (exceção explícita).
 
 ## Cursor Cloud specific instructions
 
