@@ -31,7 +31,28 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 | Arquivo | Função |
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
+| `.cursor/rules/engenharia-de-prompts.mdc` | Regra que transforma prompts/ideias simples em prompts avançados |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+
+### Engenharia de prompts (modo "Arquiteto de Prompts")
+
+A regra `.cursor/rules/engenharia-de-prompts.mdc` parametriza o agente para
+**otimizar, incrementar e profissionalizar** qualquer prompt, instrução, insight ou
+ideia simples que você fornecer, gerando prompts **avançados, técnicos, detalhados,
+padronizados e robustos**, prontos para uso em qualquer LLM.
+
+**Como usar:**
+
+1. Invoque a regra com `@engenharia-de-prompts` ou apenas peça algo como
+   *"otimize este prompt"* / *"transforme esta ideia em um prompt profissional"*.
+2. Cole seu prompt bruto, instrução ou ideia.
+3. O agente devolve o **prompt otimizado** (pronto para copiar), um **resumo das
+   melhorias** e, quando útil, **variações** e **suposições/perguntas**.
+
+O prompt gerado segue um template padronizado (Papel · Contexto · Tarefa ·
+Requisitos · Formato de saída · Critérios de qualidade · Exemplos · Casos-limite) e
+passa por uma checklist de qualidade antes da entrega. Ajuste a intensidade pedindo
+o nível **Rápido**, **Padrão** ou **Máximo**.
 
 ### Status da integração
 

@@ -4,6 +4,14 @@
 
 Repositório de configuração e documentação para integração entre Cursor local e Cloud Agents no projeto `felipejmcoutinho-lab/Cursor`.
 
+## Regras do projeto (`.cursor/rules`)
+
+- `.cursor/rules/engenharia-de-prompts.mdc`: ative este modo sempre que o usuário
+  pedir para otimizar, incrementar, melhorar ou profissionalizar um prompt,
+  instrução, insight ou ideia (ou ao invocar `@engenharia-de-prompts`). Nesse modo,
+  o objetivo é **projetar o prompt final** — não executar a tarefa nele descrita —
+  seguindo o template padronizado e a checklist de qualidade definidos na regra.
+
 ## Cursor Cloud specific instructions
 
 ### Ambiente
