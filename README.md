@@ -32,6 +32,33 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+| `.cursor/rules/arquiteto-de-prompts.mdc` | Rule que parametriza o agente como engenheiro de prompts |
+| `.cursor/commands/otimizar-prompt.md` | Command `/otimizar-prompt` para otimizar prompts rapidamente |
+
+## Arquiteto de Prompts
+
+Este repositório inclui uma parametrização para transformar entradas simples
+(prompts, instruções, insights ou ideias) em **prompts avançados, profissionais,
+técnicos, detalhados, padronizados e robustos**, prontos para colar em qualquer LLM.
+
+### Como usar
+
+- **Via Command:** digite `/otimizar-prompt` no chat do Cursor e cole sua entrada bruta.
+- **Via Rule:** peça em linguagem natural (ex.: "otimize/incremente/profissionalize
+  este prompt: ...") — a rule `arquiteto-de-prompts` é acionada automaticamente pela
+  descrição.
+
+### O que você recebe
+
+1. Perguntas de esclarecimento (apenas quando necessárias).
+2. Prompt otimizado em bloco de código, pronto para copiar.
+3. Lista do que melhorou e por quê.
+4. Suposições adotadas.
+5. Variações opcionais (enxuta, detalhada e/ou otimizada por modelo-alvo).
+
+O prompt final segue um template padronizado: **Papel · Objetivo · Contexto ·
+Tarefa/Passos · Restrições · Formato de saída · Critérios de sucesso · Exemplos**,
+com `{{placeholders}}` para o que depende de você.
 
 ### Status da integração
 

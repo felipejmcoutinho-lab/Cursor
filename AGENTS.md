@@ -4,6 +4,14 @@
 
 Repositório de configuração e documentação para integração entre Cursor local e Cloud Agents no projeto `felipejmcoutinho-lab/Cursor`.
 
+## Arquiteto de Prompts
+
+- Quando o usuário pedir para **otimizar, incrementar, melhorar, refinar, expandir
+  ou profissionalizar** um prompt, instrução, insight ou ideia, siga a rule
+  `.cursor/rules/arquiteto-de-prompts.mdc`.
+- Atalho: o command `/otimizar-prompt` (`.cursor/commands/otimizar-prompt.md`)
+  dispara o mesmo fluxo.
+
 ## Cursor Cloud specific instructions
 
 ### Ambiente
