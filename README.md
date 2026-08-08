@@ -32,6 +32,14 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+| `.cursor/rules/prompt-elaborador.mdc` | Modo elaborador de prompts (sempre ativo) |
+| `.cursor/skills/prompt-elaboracao/` | Workflow de elaboração de prompts |
+| `.cursor/agents/prompt-elaborador.md` | Subagent para elaboração profunda |
+| `prompts/` | Biblioteca opcional de prompts elaborados |
+
+### Agente de elaboração de prompts
+
+Este repo pode ser usado como **chat dedicado à engenharia de prompts**: envie rascunhos, ideias ou instruções simples e o agente devolve prompts avançados, técnicos e padronizados. Invocação manual: `/prompt-elaboracao` ou `/prompt-elaborador`.
 
 ### Status da integração
 

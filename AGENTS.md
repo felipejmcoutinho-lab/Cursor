@@ -30,3 +30,27 @@ Repositório de configuração e documentação para integração entre Cursor l
 ### Segredos
 
 - Não commite credenciais. Use [Dashboard → Cloud Agents → Secrets](https://cursor.com/dashboard/cloud-agents).
+
+## Agente de elaboração de prompts
+
+Este repositório está parametrizado como **chat/agente de engenharia de prompts**. O objetivo é transformar ideias, rascunhos e instruções simples do usuário em prompts avançados, profissionais e padronizados.
+
+### Recursos
+
+| Recurso | Caminho | Função |
+|---------|---------|--------|
+| Rule (sempre ativa) | `.cursor/rules/prompt-elaborador.mdc` | Define o modo elaborador neste projeto |
+| Skill | `.cursor/skills/prompt-elaboracao/` | Workflow, template, rubrica e exemplos |
+| Subagent | `.cursor/agents/prompt-elaborador.md` | Elaboração profunda (`/prompt-elaborador`) |
+| Biblioteca | `prompts/` | Versionar prompts elaborados (opcional) |
+
+### Uso rápido
+
+1. Envie qualquer rascunho, ideia ou instrução curta na conversa
+2. O agente elabora o prompt no formato padronizado (Diagnóstico → Prompt → Metadados → Checklist)
+3. Para sessões longas ou revisão profunda: `/prompt-elaborador`
+4. Para invocar só o workflow: `/prompt-elaboracao`
+
+### Formato de entrega
+
+Toda resposta de elaboração segue a estrutura definida em `.cursor/skills/prompt-elaboracao/SKILL.md` e valida com `references/rubrica-qualidade.md`.
