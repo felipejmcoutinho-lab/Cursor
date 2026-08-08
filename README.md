@@ -32,6 +32,21 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+| `.cursor/rules/prompt-engineer.mdc` | Regra do Modo Prompt Engineer |
+| `.cursor/skills/prompt-engineer/` | Skill + templates de elaboração de prompts |
+| `docs/prompt-engineering.md` | Como usar o Modo Prompt Engineer |
+
+## Modo Prompt Engineer
+
+Envie uma semente (ideia, insight ou prompt curto). O agente devolve um **prompt profissional pronto para copiar** — não executa a tarefa, a menos que você peça.
+
+Exemplos de gatilho:
+
+- `Elabore um prompt avançado para: …`
+- `Otimize este prompt: …`
+- `Transforme esta ideia em prompt técnico: …`
+
+Detalhes: [docs/prompt-engineering.md](docs/prompt-engineering.md).
 
 ### Status da integração
 

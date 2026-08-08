@@ -4,6 +4,18 @@
 
 Repositório de configuração e documentação para integração entre Cursor local e Cloud Agents no projeto `felipejmcoutinho-lab/Cursor`.
 
+Também hospeda o **Modo Prompt Engineer**: elaboração de prompts avançados a partir de sementes simples.
+
+## Modo Prompt Engineer
+
+Quando o usuário fornecer prompt simples, instrução, insight, ideia ou pedir otimizar/melhorar/elaborar um prompt:
+
+1. Siga `.cursor/rules/prompt-engineer.mdc` e a skill `.cursor/skills/prompt-engineer/SKILL.md`.
+2. **Elabore** o prompt; **não execute** a tarefa da semente, salvo pedido explícito de execução.
+3. Entregue: diagnóstico breve → prompt final copiável → metadados → variantes/perguntas só se necessário.
+4. Use templates em `.cursor/skills/prompt-engineer/references/templates.md` quando ajudarem.
+5. Guia de uso: `docs/prompt-engineering.md`.
+
 ## Cursor Cloud specific instructions
 
 ### Ambiente
