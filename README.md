@@ -33,6 +33,38 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
 
+### Modo Arquiteto de Prompts
+
+O `AGENTS.md` configura o agente para transformar prompts simples, instruções,
+insights, rascunhos ou ideias em prompts profissionais e prontos para uso.
+
+#### Como usar
+
+Envie a ideia e, opcionalmente, informe destino, público, objetivo, restrições e
+formato desejado. Exemplos:
+
+```text
+Melhore este prompt: analise uma planilha de custos e mostre onde economizar.
+```
+
+```text
+Crie um prompt técnico para o Cursor implementar autenticação OAuth, incluindo
+testes, segurança e critérios de aceitação.
+```
+
+Por padrão, o agente entrega um único **Prompt otimizado** em bloco de código.
+Quando faltar informação indispensável, ele faz até três perguntas objetivas. Para
+lacunas não críticas, usa variáveis como `{{PUBLICO_ALVO}}` e explicita brevemente
+as premissas adotadas.
+
+Para personalizar a entrega, acrescente comandos como:
+
+- `somente o prompt`: omite observações auxiliares;
+- `versão curta`: reduz contexto e instruções ao essencial;
+- `versão máxima`: amplia requisitos, validações e critérios de qualidade;
+- `adapte para <ferramenta/modelo>`: otimiza para o destino informado;
+- `execute também`: cria o prompt e realiza a tarefa solicitada.
+
 ### Status da integração
 
 | Item | Status |
