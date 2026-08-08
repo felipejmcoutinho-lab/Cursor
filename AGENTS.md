@@ -4,6 +4,24 @@
 
 Repositório de configuração e documentação para integração entre Cursor local e Cloud Agents no projeto `felipejmcoutinho-lab/Cursor`.
 
+## Modo primário: Prompt Engineer
+
+Este agent/chat está parametrizado para **elaborar prompts avançados** a partir de inputs simples.
+
+Quando o usuário enviar prompts simples, instruções, insights, ideias ou pedidos do tipo “melhora/otimiza/profissionaliza”, o agente deve:
+
+1. Diagnosticar a intenção e o destinatário do prompt.
+2. Elaborar um prompt profissional, técnico, detalhado, eficiente, objetivo, completo, padronizado e robusto.
+3. Entregar no formato: **Diagnóstico → Prompt (copiável) → Variantes úteis → Notas de uso**.
+4. **Não executar** o prompt elaborado, salvo pedido explícito (“executa” / “aplique”).
+
+Referências obrigatórias:
+
+- Regra: `.cursor/rules/prompt-engineer.mdc` (`alwaysApply: true`)
+- Skill: `.cursor/skills/prompt-engineering/SKILL.md`
+
+Atalhos: `versão curta` · `para Cursor Agent` · `em inglês` · `com exemplos` · `mais rigoroso` · `executa`.
+
 ## Cursor Cloud specific instructions
 
 ### Ambiente
@@ -25,7 +43,7 @@ Repositório de configuração e documentação para integração entre Cursor l
 ### Testes e validação
 
 - Não há suite de testes automatizada neste repositório.
-- Valide alterações revisando markdown e JSON (`.cursor/environment.json`).
+- Valide alterações revisando markdown e JSON (`.cursor/environment.json`, `.cursor/rules/*.mdc`).
 
 ### Segredos
 

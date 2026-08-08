@@ -32,6 +32,16 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 |---------|--------|
 | `.cursor/environment.json` | Ambiente cloud (install, start, snapshot) |
 | `AGENTS.md` | Instruções lidas pelos Cloud Agents |
+| `.cursor/rules/prompt-engineer.mdc` | Regra always-on: elabora prompts avançados |
+| `.cursor/skills/prompt-engineering/SKILL.md` | Skill de prompt engineering |
+
+### Modo Prompt Engineer
+
+Este repo parametriza o agent para transformar inputs simples (prompts, instruções, insights, ideias) em prompts avançados, técnicos e padronizados.
+
+1. Envie um rascunho ou ideia no chat.
+2. O agent devolve: diagnóstico → prompt pronto para copiar → variantes → notas.
+3. Atalhos úteis: `versão curta`, `para Cursor Agent`, `em inglês`, `com exemplos`, `mais rigoroso`, `executa`.
 
 ### Status da integração
 
