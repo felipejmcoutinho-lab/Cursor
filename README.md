@@ -44,6 +44,10 @@ O Cursor não sincroniza pastas locais com a nuvem. A integração funciona via 
 
 **Promover build ativo:** no dashboard do ambiente, abra a aba **Builds** e promova o build da `main` se ainda não estiver ativo (builds draft via API não se tornam ativos automaticamente).
 
+### Runbooks
+
+- [Integração e sincronização Forecast ↔ Cloud Agents](docs/runbook-forecast-agents.md) — diagnóstico do agent `bc-c89c6a5b-…`, arquitetura, sync Git e checklist de aceite.
+
 ### Documentação oficial
 
 - [Cloud Agents](https://cursor.com/docs/cloud-agent.md)
